@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INPG Day1</title>
+  <link href="https://image.flaticon.com/teams/slug/google.jpg" rel="icon" type="image/jpg" />
+</head>
+
+<body>
+  <h1>INPG</h1>
+  <h4>batch - 14</h4>
+  <!-- membuat paragraf -->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Dicta laboriosam laborum necessitatibus repudiandae aut a.
+    Atque exercitationem, similique ratione fugit, vitae nihil
+    <span>tes</span>
+  </p>
+
+  <!-- memnbuat quote -->
+  <blockquote>
+    "There are only 10 types of people in this world—or universe—: those who understand binary, dan those who don't."
+    — cliché computer joke
+  </blockquote>
+  <figure>
+    <img src="https://image.flaticon.com/teams/slug/google.jpg" alt="loading indicator">
+  </figure>
+
+  <!-- list UL = unordered list OL = ordered list -->
+  <p>TODO LIST : </p>
+  <ul style="list-style-type: decimal-leading-zero">
+    <li>eat</li>
+    <li>sleep</li>
+    <li>code</li>
+    <ol>
+      <li>JAVA</li>
+      <li>Phyton</li>
+    </ol>
+  </ul>
+
+  <!-- membuattabel -->
+  <table>
+    <thead>
+      <tr>
+        <th>Animal Name</th>
+        <th>Required Meat (kg)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lion</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Tiger</td>
+        <td>40</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>100</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- membuat form -->
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <p>
+        <label for="full-namee">Full Name</label>
+        <input id="full-name" name="fullName" type="text">
+      </p>
+      <p>
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="date" />
+      </p>
+      <select name="altProgrammingLangs">
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="ruby">Ruby</option>
+        <option value="python">Python</option>
+      </select>
+      <p>
+        <button id="email" name="email" type="submit">Submit</button>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Work Information</legend>
+      <!-- some other inputs -->
+    </fieldset>
+  </form>
+
+  <script>
+    console.log("I am JavaScript");
+  </script>
+</body>
+
+</html>
