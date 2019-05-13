@@ -73,6 +73,21 @@ ELSE SET grade = "grade D"
 DISPLAY grade
 */
 
+var score = prompt("nilai anda :")
+var skor = Number(score)
+
+if (skor >= 85) {
+    grade = "A"
+} else if (skor >= 75 && skor < 85) {
+    grade = "B"
+} else if (skor >= 65 && skor < 75) {
+    grade = "C"
+} else {
+    grade = "D"
+}
+
+console.log(grade)
+
 /*
 SOAL 2
 
@@ -114,12 +129,12 @@ Note: x bisa di isi nilai berapa saja (maksimal 4)
 
 PSUEDOCODE 
 
-SET x dengan 0
+STORE nilai x
 SET kurangKecepatan = 0
 SET kecepatan = 20km/jam
 
 IF x <= 4
-    IF x <= 4
+    IF x = 4
     set kurangkecepatan 7
     ELSE IF x > 2
     set kurangkecepatan 5
