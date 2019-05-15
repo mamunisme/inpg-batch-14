@@ -29,6 +29,7 @@ CALCULATE kecepatan - kurangKecepatan
 TAMPILKAN kecepatan
 
 */
+
 var x = prompt("Jumlah Penumpang :");
 var kurangKecepatan;
 var kecepatan = 20;
@@ -44,9 +45,10 @@ if (x <= 4) {
         kurangKecepatan = "2";
 
     }
+
+    kecepatanNow = kecepatan - kurangKecepatan;
+    console.log(kecepatanNow);
+
 } else {
     alert("penumpang maksimal 4");
 }
-
-kecepatanNow = kecepatan - kurangKecepatan;
-console.log(kecepatanNow);
