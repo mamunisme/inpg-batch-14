@@ -33,15 +33,18 @@ name = prompt("masukan nama anda : ");
 
 if (name != "") {
     age = prompt("masukan umur anda : ");
-    money = prompt("masukan jumlah uang anda skrg: ");
+
     if (age < 17) {
         minum = "juice";
         harga = 50000;
+
     } else {
         minum = "anggur";
         harga = 300000;
     }
+    alert("anda hanya bisa memesan " + minum + " seharga " + harga);
 
+    money = prompt("masukan uang pembayaran anda : ");
     total = money - harga;
     if (total < 0) {
         console.log("Uang Tidak Cukup. anda harus pulang")
