@@ -49,7 +49,7 @@ if (name != "") {
     if (total < 0) {
         console.log("Uang Tidak Cukup. anda harus pulang")
     } else {
-        console.log(" anda bisa pesan " + minum + ". sisa uang anda: " + total);
+        console.log(" anda bisa pesan minum " + minum + ". sisa uang anda: " + total);
     }
 
 } else {
