@@ -37,7 +37,7 @@ function getGrade(nilai) {
 }
 
 var score = prompt("nilai anda :");
-// var skor = getGrade(score);
-// console.log(skor);
+var skor = getGrade(score);
+console.log(skor);
 
-console.log(getGrade(score))
+// console.log(getGrade(score))
