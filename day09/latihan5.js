@@ -19,4 +19,36 @@ dan ganti ... dengan sisa uang yang telah dikurangi oleh harga minuman.
 
 function pengunjungBar(name, age, money) {
 
+    var output, harga, minum;
+
+    if (name != "") {
+
+        if (age < 17) {
+            minum = "juice";
+            harga = 50000;
+
+        } else {
+            minum = "anggur";
+            harga = 300000;
+        }
+        output = alert("anda hanya bisa memesan " + minum + " seharga " + harga);
+
+
+        total = money - harga;
+        if (total < 0) {
+            output = console.log("Uang Tidak Cukup. anda harus pulang")
+        } else {
+            output = console.log(" anda bisa pesan minum " + minum + ". sisa uang anda: " + total);
+        }
+
+    } else {
+        output = console.log("Anda tidak boleh masuk!");
+    }
+
 }
+
+name = prompt("masukan nama anda: ");
+age = prompt("masukan Umur");
+money = prompt("masukan pembayaran anda? ");
+
+console.log(pengunjungBar(name, age, money));

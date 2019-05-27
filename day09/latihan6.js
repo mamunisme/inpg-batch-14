@@ -11,9 +11,15 @@ for the test case, the parameter num will be any number from 1 to 1000
 */
 
 function tambahDeret(num) {
+
+    var i, total;
+    num = Number(num)
+
     if (num >= 1 && num <= 1000) {
-        total = 0
+        total = 0;
+
         for (i = num; i > 0; i--) {
+
             total += i;
         }
         return `total penjumlahan angka 1 sampai ${num} adalah ` + total;

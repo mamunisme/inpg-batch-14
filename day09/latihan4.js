@@ -21,22 +21,27 @@ contoh:
 50 - angka genap
 */
 
+
 function loopingGanjilGenap(angkaMin, angkaMax) {
-    var angka = 0;
+    var angka, hasil;
+    if (angkaMin <= angkaMax) {
+        for (angka = angkaMin; angka <= angkaMax; angka++) {
 
-    for (var angka = angkaMin; angka <= angkaMax; angka++) {
-
-        if (angka % 2 == 0) {
-            hasil = console.log(` ${angka} - angka Genap`);
-        } else {
-            hasil = console.log(` ${angka} - angka Genap`);
+            if (angka % 2 == 0) {
+                hasil = console.log(` ${angka} - angka Genap`);
+            } else {
+                hasil = console.log(` ${angka} - angka Genap`);
+            }
         }
 
+    } else {
+        hasil = console.log("angka min lebih besar dari angka max")
     }
     return hasil;
 }
 
 angkaMin = prompt("masukan angka min:");
 angkaMax = prompt("masukan angka max:");
+
 
 console.log(loopingGanjilGenap(angkaMin, angkaMax))
