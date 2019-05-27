@@ -1,3 +1,11 @@
+/**
+ * 
+ * @param {*} name 
+ * @param {*} age 
+ * @param {*} money 
+ */
+
+
 /*
 SOAL 5
 Seseorang pengunjung bar direpresentasikan oleh JavaScript dengan memiliki variable name, age, dan money. 
@@ -32,8 +40,6 @@ function pengunjungBar(name, age, money) {
             harga = 300000;
         }
         output = alert("anda hanya bisa memesan " + minum + " seharga " + harga);
-
-
         total = money - harga;
         if (total < 0) {
             output = console.log("Uang Tidak Cukup. anda harus pulang")
