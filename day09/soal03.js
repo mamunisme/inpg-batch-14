@@ -10,6 +10,12 @@ kaskus(1,15) ??[{1,2,"KAS",4,5,"KUS",7,8,"KAS",10,11,"KUS",13,14,"KASKUS"}]
 
  */
 
+/**
+ * 
+ * @param {number} angkaMinimal 
+ * @param {number} angkaMaksimal 
+ */
+
 
 function kaskus(angkaMinimal, angkaMaksimal) {
     var angka = [];

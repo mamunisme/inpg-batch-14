@@ -9,6 +9,13 @@ LoopingAngka(1,50) // [1,2,3,4,5,... 48,49,50]
 
 */
 
+/**
+ * 
+ * @param {number} min 
+ * @param {number} max
+ * @return {array}Angka 
+ */
+
 function LoopingAngka(min, max) {
     var Angka = [];
 
