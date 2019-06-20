@@ -8,12 +8,33 @@ Jika tidak ditemukan 'x' sama sekali, function akan me-return nilai 0.
 */
 
 function targetTerdekat(arr) {
+  var index1 = 0;
+  var index2 = 0;
+  var jarak = 0;
+  var arrX = [];
 
-    panjang = arr.length;
+  //mencari nilai x jika tidak ditemukan hasilkan nilai 0
+  if (arr.indexOf('x') === -1) {
+    return 0
+  } else {
 
-    for (let i = 0; i < panjang; i += ) {
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === 'x') {
+        index1 = i
+        arrX.push(index1)
+      } else if (arr[i] === 'o') {
+        index2 = i
+      }
 
+      var hasil = [];
+      for (var j = 0; j < arrX.length; j++) {
+        jarak = Math.abs(index2 - arrX[j]);
+        hasil.push(jarak)
+        hasil.sort()
+      }
     }
+    return hasil[0]
+  }
 
 }
 
